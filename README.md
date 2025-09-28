@@ -1,63 +1,83 @@
-# 🃏 Projeto: Cadastro de Cartas Super Trunfo
+# Cadastro de Cartas do Super Trunfo
 
-Este projeto implementa em **C** um programa simples que permite ao usuário cadastrar e exibir as informações de **duas cartas do Super Trunfo**.
-O foco está em praticar **entrada de dados, armazenamento em variáveis e saída formatada**.
+## 📌 Descrição
 
----
+Este programa em C permite o **cadastro de duas cartas do jogo Super Trunfo**.
+Cada carta contém informações sobre uma cidade, como Estado, Código da Carta, Nome da Cidade, População, Área, PIB e Número de Pontos Turísticos.
 
-## 🎯 Objetivo
-
-* Permitir que o usuário insira os dados de **duas cidades**, representadas como cartas do Super Trunfo.
-* Exibir os dados cadastrados de forma clara e organizada.
 
 ---
 
-## 📝 Informações cadastradas
+## 🛠️ Funcionalidades
 
-Cada carta contém os seguintes atributos:
+* Cadastro de **duas cartas** do Super Trunfo.
+* Leitura de dados do usuário pela entrada padrão.
+* Exibição organizada das informações cadastradas:
 
-* **Estado**: Uma letra de `A` a `Z`. *(char)*
-* **Código da Carta**: Letra do estado + número de 01 a 04 (ex: `A01`, `B03`). *(string)*
-* **Nome da Cidade**: Nome completo da cidade. *(string)*
-* **População**: Número de habitantes. *(int)*
-* **Área (km²)**: Tamanho em quilômetros quadrados. *(float)*
-* **PIB**: Produto Interno Bruto em bilhões de reais. *(float)*
-* **Número de Pontos Turísticos**: Quantidade de pontos turísticos cadastrados. *(int)*
+  * Estado
+  * Código
+  * Nome da Cidade
+  * População
+  * Área (em km²)
+  * PIB (em bilhões de reais)
+  * Número de Pontos Turísticos
 
 ---
 
-## 💻 Exemplo de Execução
+## 📋 Estrutura do Código
 
-### Entrada (usuário digita):
+* Declaração de variáveis para armazenar os dados de cada carta.
+* Entrada dos dados do **usuário** com `scanf`.
+* Impressão organizada dos dados cadastrados na tela.
+
+---
+
+## ▶️ Exemplo de Uso
+
+### Entrada:
 
 ```
 Cadastro da Carta 1:
-Estado (A-Z): A
-Codigo da carta (ex: A01): A01
-Nome da cidade: São Paulo
-Populacao: 12325000
-Area (em km²): 1521.11
-PIB (em bilhoes de reais): 699.28
-Numero de pontos turisticos: 50
+Estado :
+A
+Codigo da carta (ex: A01):
+A01
+Nome da cidade:
+São Paulo
+Populacao:
+12325000
+Area (em km²):
+1521.11
+PIB (em bilhoes de reais):
+699.28
+Numero de pontos turisticos:
+50
 
 Cadastro da Carta 2:
-Estado (A-Z): B
-Codigo da carta (ex: B02): B02
-Nome da cidade: Rio de Janeiro
-Populacao: 6748000
-Area (em km²): 1200.25
-PIB (em bilhoes de reais): 300.50
-Numero de pontos turisticos: 30
+Estado (A-Z):
+B
+Codigo da carta (ex: B02):
+B02
+Nome da cidade:
+Rio de Janeiro
+Populacao:
+6748000
+Area (em km²):
+1200.25
+PIB (em bilhoes de reais):
+300.50
+Numero de pontos turisticos:
+30
 ```
 
-### Saída (programa imprime):
+### Saída:
 
 ```
 Carta 1:
 Estado: A
 Codigo: A01
 Nome da Cidade: São Paulo
-Populacao: 12325000
+Populacao: 12325000.000
 Area: 1521.11 km²
 PIB: 699.28 bilhoes de reais
 Numero de Pontos Turisticos: 50
@@ -66,7 +86,7 @@ Carta 2:
 Estado: B
 Codigo: B02
 Nome da Cidade: Rio de Janeiro
-Populacao: 6748000
+Populacao: 6748000.000
 Area: 1200.25 km²
 PIB: 300.50 bilhoes de reais
 Numero de Pontos Turisticos: 30
@@ -74,16 +94,22 @@ Numero de Pontos Turisticos: 30
 
 ---
 
-## ⚙️ Requisitos Atendidos
+## ⚙️ Requisitos
 
-* ✅ Cadastro de **duas cartas**
-* ✅ Uso de variáveis apropriadas para cada dado
-* ✅ Exibição clara e organizada dos dados cadastrados
-* ✅ Código simples, **sem laços nem condicionais** (apenas sequência de instruções)
-* ✅ Comentários explicativos e indentação adequada
+* Compilador C (como **GCC**).
+* Sistema operacional compatível (Linux, Windows ou macOS).
 
 ---
-📜 Licença
 
-Este projeto é distribuído sob a licença MIT.
-Você pode usar, modificar e compartilhar livremente, desde que mantenha os créditos originais.
+
+## 📖 Observações
+
+* O programa **não usa loops** ou **condições** — é uma sequência linear de instruções.
+* A entrada deve ser feita de forma consistente, respeitando os tipos esperados (`int`, `float`, `string`).
+* Use `.` como separador decimal ao inserir valores de área e PIB.
+
+---
+
+## 📜 Licença
+
+Este projeto é de uso educacional e pode ser utilizado livremente para estudo e aprendizado em programação C.
