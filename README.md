@@ -87,7 +87,3 @@ Numero de Pontos Turisticos: 30
 
 Este projeto é distribuído sob a licença MIT.
 Você pode usar, modificar e compartilhar livremente, desde que mantenha os créditos originais.
-
-
---- licença MIT.
-Você pode usar, modificar e compartilhar livremente, desde que mantenha os créditos originais.
